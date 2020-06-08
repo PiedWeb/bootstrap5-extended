@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PiedWeb/piedweb-bs5-theme.git"
+    "url": "git+https://github.com/PiedWeb/bootstrap5-extended.git"
   },
   "keywords": [
     "bootstrap",
