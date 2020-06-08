@@ -1,0 +1,19 @@
+.un-masonry {
+  display: block;
+  column-gap: $grid-gutter-width;
+
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
+    column-count: 2;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, 'xl')) {
+    column-count: 3;
+  }
+
+  .tile {
+    margin-bottom: $grid-gutter-width;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+}

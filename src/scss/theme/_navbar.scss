@@ -1,0 +1,63 @@
+.navbar-brand {
+  width: $logo-width;
+  height: $logo-height;
+  background-repeat: no-repeat;
+  text-indent: -9999em;
+  background-size: contain;
+  padding: 0;
+}
+.navbar-light {
+  .navbar-brand {
+    background-image: $logo-dark;
+  }
+}
+
+.navbar-dark {
+  .navbar-brand {
+    background-image: $logo-light;
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      &.current {
+        color: $navbar-light-disabled-color;
+      }
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      &.current {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+  }
+}
+
+body {
+  min-height: 100vh;
+}
+
+.pt-nav {
+  padding-top: $navbar-height;
+}
+
+.mt-nav {
+  margin-top: $navbar-height;
+}
+
+.mt-nav-2 {
+  margin-top: ($navbar-height * 2);
+}
+
+.mt-nnav {
+  margin-top: -$navbar-height;
+}
+
+.mt-nnav-2 {
+  margin-top: -($navbar-height * 2);
+}

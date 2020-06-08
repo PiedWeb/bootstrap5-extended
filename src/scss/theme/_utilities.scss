@@ -1,0 +1,111 @@
+@each $color, $value in $colors {
+  .icon-#{$color} {
+    color: $value;
+    //color: $value; //theme-color-level($color, 6)
+    background-color: mix($white, $value, 90%);
+  }
+}
+
+@each $color, $value in $colors {
+  .text-#{$color} {
+    color: $value;
+  }
+}
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.a {
+  cursor: pointer;
+  color: $link-color;
+  text-decoration: $link-decoration;
+}
+
+.a:hover {
+  color: $link-hover-color;
+  text-decoration: $link-hover-decoration;
+}
+
+.link-text {
+  color: inherit;
+}
+
+.ninja {
+  text-decoration: none !important;
+  color: inherit;
+  cursor: auto;
+}
+
+.fullwidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.container-txt {
+  max-width: $container-txt;
+}
+
+.text-light {
+  a,
+  .a {
+    color: $white;
+    &:hover,
+    &:focus {
+      color: darken($white, $emphasized-link-hover-darken-percentage);
+    }
+  }
+}
+
+.shadow-color {
+  transform: scale(0.95);
+  position: absolute;
+  top: 0;
+  filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 0;
+}
+
+.border-transparent {
+  border-color: transparent; //: 1px solid transparent;
+}
+
+.border-top-2 {
+  border-top: 2px solid;
+}
+.border-2 {
+  border: 2px solid;
+}
+
+.first-letter-lg {
+  &::first-letter {
+    font-size: 1.3em;
+  }
+}
+
+.z-1 {
+  position: relative;
+  z-index: 1;
+}
+
+@each $breakpoint, $value in $container-max-widths {
+  .mw-#{$breakpoint} {
+    max-width: $value;
+  }
+}

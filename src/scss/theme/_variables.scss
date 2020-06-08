@@ -1,0 +1,51 @@
+// ------------------------------
+// Bootstrap Variables Customized
+// ------------------------------
+
+$primary: #319795 !default;
+$secondary: #2c7a7b !default;
+
+$body-color: #777777 !default;
+$line-height-base: 1.625 !default;
+
+$enable-negative-margins: true;
+
+$input-focus-border-color: $primary !default; // lighten($component-active-bg, 25%) !default;
+
+// ------------------------------
+// Theme variables
+// ------------------------------
+
+// utilities
+$container-txt: 720px !default; //md
+
+// navbar
+$logo-height: 60px !default; //3.125rem !default;
+$logo-width: 140px !default; //3.125rem !default;
+$navbar-padding-y: 8px !default; // 0.5rem !default;
+$logo: url('../img/logo-dark.png') !default; // better to use svg and fill TODO
+$logo-light: url('../img/logo-light.png') !default;
+$logo-dark: url('../img/logo-dark.png') !default;
+$navbar-height: $logo-height + ($navbar-padding-y * 2) !default;
+
+// inline gallery
+$inline-gallery-item-padding: 0.5rem !default; //$grid-gutter-width !default;
+
+// ------
+/**
+
+$footer-background-color: #222 !default;
+$navbar-default-bg: rgba(0, 0, 0, 0.5) !default;
+$navbar-bg: $navbar-default-bg !default; //$primary !default;
+$navbar-bg-stick: rgba(0, 0, 0, 0.5) !default; //$primary !default;
+$navbar-bg-nostick: $primary !default; // or small
+
+$logo: url('../img/logo.png') !default;
+$logo-width: 150px !default;
+$logo-height: 50px !default;
+$navbar-height: $logo-height + $navbar-padding-y + $navbar-padding-y !default;
+
+$logo-width-on-small-screen: $logo-width * 0.8 !default;
+$logo-height-on-small-screen: $logo-height * 0.8 !default;
+$halfscreen-min-height: 60vh !default;
+/**/

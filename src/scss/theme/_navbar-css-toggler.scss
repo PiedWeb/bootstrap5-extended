@@ -1,0 +1,38 @@
+/** override default bootstrap style to make it work */
+.collapse:not(.show) {
+  display: block;
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        .navbar-collapse {
+          max-height: 100vh !important;
+        }
+      }
+    }
+  }
+}
+
+/** add checkbox related css */
+.navbar-toggler-checkbox {
+  display: none;
+}
+
+.navbar-collapse {
+  display: block;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 600ms ease-out;
+}
+
+.navbar-toggler-checkbox:checked ~ .navbar-collapse {
+  display: block;
+  max-height: 100vh;
+  overflow-y: auto;
+  transition: all 600ms ease-in;
+}
