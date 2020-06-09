@@ -10,7 +10,7 @@
 
 # Bootstrap 5 Extended
 
-**Demo** [piedvert.com (Mountain Leaders Website in Vercors)](https://piedvert.com)
+**Demo** [piedvert.com (Mountain Guide Website in Vercors)](https://piedvert.com)
 
 ## Theme and UI Kit functionnal without Javascript
 
@@ -55,7 +55,7 @@ See [demo/index.html](src/demo/html/index.html).
 
 Integration:
 
-- Via [PiedWeb/ThemeComponent](https://github.com/PiedWeb/BootstrapThemeComponent) for [PiedWeb/CMS](<[https://d](https://github.com/PiedWeb/CMS)>)
+- Via [PiedWeb/ThemeComponent](https://github.com/PiedWeb/ThemeComponentBundle) for [PiedWeb/CMS](<[https://d](https://github.com/PiedWeb/CMS)>)
 
 ## Credits
 
