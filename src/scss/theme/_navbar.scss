@@ -14,12 +14,18 @@
 .navbar-light {
   .navbar-brand {
     background-color: $primary;
+    &:hover {
+      background-color: darken($primary, 5%);
+    }
   }
 }
 
 .navbar-dark {
   .navbar-brand {
     background-color: $light;
+    &:hover {
+      background-color: darken($light, 5%);
+    }
   }
 }
 
