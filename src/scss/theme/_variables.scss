@@ -21,11 +21,9 @@ $container-txt: 720px !default; //md
 
 // navbar
 $logo-height: 60px !default; //3.125rem !default;
-$logo-width: 140px !default; //3.125rem !default;
+$logo-width: 60px !default; //3.125rem !default;
 $navbar-padding-y: 8px !default; // 0.5rem !default;
-$logo: url('../img/logo-dark.png') !default; // better to use svg and fill TODO
-$logo-light: url('../img/logo-light.png') !default;
-$logo-dark: url('../img/logo-dark.png') !default;
+$logo: url('../img/logo_title.svg') !default;
 $navbar-height: $logo-height + ($navbar-padding-y * 2) !default;
 
 // inline gallery

@@ -5,16 +5,22 @@
   text-indent: -9999em;
   background-size: contain;
   padding: 0;
+
+  -webkit-mask: $logo no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask: $logo no-repeat 50% 50%;
+  mask-size: contain;
 }
 .navbar-light {
   .navbar-brand {
-    background-image: $logo-dark;
+    background-color: $primary; //background-image: $logo-dark;
   }
 }
 
 .navbar-dark {
   .navbar-brand {
-    background-image: $logo-light;
+    background-color: $light;
+    //background-image: $logo-light;
   }
 }
 
