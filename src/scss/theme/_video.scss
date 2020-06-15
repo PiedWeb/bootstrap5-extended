@@ -1,0 +1,46 @@
+.btn-play {
+  display: block;
+  &.rounded-pill {
+    height: 6rem;
+    &:after {
+      margin: 0 1.7rem;
+    }
+  }
+  text-indent: -99999px;
+  position: absolute;
+  left: calc(50% - 3rem);
+  width: 6rem;
+  height: 4rem;
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
+    top: calc(50% - 3rem);
+  }
+  bottom: 20%;
+  &:after {
+    margin: -1rem 1.7rem;
+    display: block;
+    content: '';
+    box-sizing: border-box;
+    border-color: inherit;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-right: 0;
+    border-left: 1.5rem solid;
+  }
+  &:hover {
+    &:after {
+      border-color: transparent transparent transparent $white;
+    }
+  }
+}
+
+iframe.w-100 {
+  min-height: 50vh;
+  @include media-breakpoint-up(md) {
+    min-height: 62vh;
+  }
+  @include media-breakpoint-up(xl) {
+    min-height: 85vh;
+  }
+  max-height: 100vh;
+  z-index: 2000;
+}

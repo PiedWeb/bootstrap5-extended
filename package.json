@@ -29,7 +29,7 @@
     "bootstrap": "github:twbs/bootstrap#master",
     "bootstrap-cookie-consent": "^0.0.7",
     "macy": "^2.5",
-    "piedweb-cms-js-helpers": "^0.0.12",
+    "piedweb-cms-js-helpers": "^0.0.21",
     "tiny-slider": "^2.9.2"
   },
   "devDependencies": {

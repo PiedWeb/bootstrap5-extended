@@ -18,6 +18,8 @@ import Macy from 'macy';
 // todo clean helper.js
 import { toggleOnScrollTop } from './helpers.js';
 
+import { replaceOn } from 'piedweb-cms-js-helpers/src/helpers';
+
 // Initialize few libs
 // -------------------
 
@@ -43,7 +45,13 @@ var gallery = function () {
 
 function applyOnDomChanged() {
   gallery();
-  if (document.querySelector('.tns')) tns(sliderOptions);
+  if (document.querySelector('.tns')) {
+    tns(sliderOptions);
+    document.querySelectorAll('.tns').forEach(function (element) {
+      element.classList.remove('tns'); // avoid bug if event is fired twice
+    });
+  }
+  replaceOn();
 }
 
 function applyOnDomLoaded() {
