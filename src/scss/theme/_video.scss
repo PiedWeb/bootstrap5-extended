@@ -33,14 +33,40 @@
   }
 }
 
-iframe.w-100 {
-  min-height: 50vh;
-  @include media-breakpoint-up(md) {
-    min-height: 62vh;
+.hero-banner {
+  iframe.w-100 {
+    min-height: 50vh;
+    @include media-breakpoint-up(md) {
+      min-height: 62vh;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 85vh;
+    }
+    max-height: 100vh;
+    z-index: 2000;
   }
-  @include media-breakpoint-up(xl) {
-    min-height: 85vh;
+}
+
+.container-video {
+  height: 50vh;
+  iframe {
+    height: 100%;
   }
-  max-height: 100vh;
-  z-index: 2000;
+}
+
+@media (min-width: map-get($grid-breakpoints, 'sm')) {
+  .container-video {
+    height: 0;
+    overflow: hidden;
+    padding-top: 591.44px / 1127.34px * 100%;
+    background: white;
+    position: relative;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
