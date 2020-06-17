@@ -1,0 +1,11 @@
+@import 'bootstrap';
+
+//
+// =Plugins
+// --------------------------------------------------
+@import 'baguettebox.js/src/baguetteBox';
+
+/**/
+$fa-font-path: '../fonts/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+/**/

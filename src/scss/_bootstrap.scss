@@ -1,7 +1,7 @@
 //
 // =Variables
 // --------------------------------------------------
-@import 'theme/variables';
+@import 'component/variables';
 
 //
 // =Bootstrap
@@ -9,38 +9,38 @@
 @import 'custom-bootstrap';
 
 // Add some helpers like .ninja/.text-link, .a, .container-txt, .fullwidth, smoothscroll, .clickable
-@import 'theme/init';
-@import 'theme/utilities';
+@import 'component/init';
+@import 'component/utilities';
 
 // Add a css toggler (ever documented)
-@import 'theme/navbar-css-toggler';
+@import 'component/navbar-css-toggler';
 
 // Add a logo
 // Add .current helper (similar to .disabled)
 // Add fixed-top margin-top
-@import 'theme/navbar';
+@import 'component/navbar';
 
 // Unordered mansory
 // add .un-masonry to wrapper then .tile
-@import 'theme/unordered-masonry';
+@import 'component/unordered-masonry';
 
 // Inline Gallery
 // add .inline-gallery to wrapper then .inline-gallery-item
-@import 'theme/inline-gallery';
+@import 'component/inline-gallery';
 // Add TNS (tiny slider) theme, active it by activing js and add .tns to an .inline-gallery
-@import '~tiny-slider/src/tiny-slider';
-@import 'theme/tns';
+@import 'tiny-slider/src/tiny-slider';
+@import 'component/tns';
 
 // Hero Banner
-@import 'theme/hero-banner';
+@import 'component/hero-banner';
 
 // intro sidebar content
-@import 'theme/layout';
+@import 'component/layout';
 
 // Hero Banner
-@import 'theme/hero-banner';
+@import 'component/hero-banner';
 
-@import 'theme/layout';
+@import 'component/layout';
 
 // play btn
-@import 'theme/_video';
+@import 'component/video';

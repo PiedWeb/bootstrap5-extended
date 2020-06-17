@@ -1,8 +1,3 @@
-// Import CSS
-// --------------------
-
-require('../scss/main.scss');
-
 // Import external libs
 // --------------------
 
