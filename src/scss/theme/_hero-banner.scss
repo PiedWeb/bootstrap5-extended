@@ -8,6 +8,9 @@
   a:not(.btn):not(:hover) {
     color: $white;
   }
+  a:not(.btn):hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
 
   .btn-outline-primary:not(:hover) {
     backdrop-filter: blur(1rem);
