@@ -13,7 +13,7 @@
     "css-purge": "purgecss --css demo/assets/css/app.css --content demo/*.html --output demo/assets/css/",
     "css": "npm run css-compile && npm run css-prefix",
     "server": "serve demo --listen 3000",
-    "watch": "nodemon -e html,scss,js -x \"npm run build\" &",
+    "watch": "nodemon -e html,scss,js --ignore demo/assets -x \"npm run build\" &",
     "test": "npm run css",
     "dev": "npm run watch && npm run server"
   },
