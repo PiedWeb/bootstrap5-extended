@@ -1480,9 +1480,9 @@ bootstrap-cookie-consent@^0.0.7:
   resolved "https://registry.yarnpkg.com/bootstrap-cookie-consent/-/bootstrap-cookie-consent-0.0.7.tgz#690b8b0d2f6e695e837904b9f1b45e6a2970af4e"
   integrity sha512-btsHgB8n1hsV0zD4sUoS202HanuQQk54SylD5FCN1csd7NiYJUbbrcZDMdDYX5XQDcvz0fxjgvc0x1B1Pma87A==
 
-"bootstrap@github:twbs/bootstrap#master":
+"bootstrap@github:twbs/bootstrap#main":
   version "5.0.0-alpha1"
-  resolved "https://codeload.github.com/twbs/bootstrap/tar.gz/1b2ea5efb1ca3cea21776bc9992a79aee47fba1a"
+  resolved "https://codeload.github.com/twbs/bootstrap/tar.gz/5ad43fec83c6cb4bd2381c02e3903ad1a5eda0db"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
