@@ -26,7 +26,7 @@
     "@fortawesome/fontawesome-free": "^5.11",
     "@fortawesome/free-solid-svg-icons": "^5.11",
     "baguettebox.js": "^1.11",
-    "bootstrap": "github:twbs/bootstrap#master",
+    "bootstrap": "github:twbs/bootstrap#main",
     "bootstrap-cookie-consent": "^0.0.7",
     "macy": "^2.5",
     "piedweb-cms-js-helpers": "^0.0.21",
