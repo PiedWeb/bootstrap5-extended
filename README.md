@@ -37,21 +37,19 @@
 npm i @piedweb/bootstrap5-extended
 ```
 
-Then see [main.scss](src/scss/main.scss) to import what you need.
+Then see [app.scss](src/scss/app.scss) to import what you need.
 
 ## Documentation
+
+#### Usage
+
+See [demo/index.html](demo/index.html) [app.js](src/js/app.js) and [app.css](src/scss/app.scss).
 
 ### Bootstrap 5 Navbar toggler without javascript
 
 ```
-
-@import 'theme/navbar-css-toggler.scss';
-
+@import 'bs5-extended/component/navbar-css-toggler.scss';
 ```
-
-#### Usage
-
-See [demo/index.html](src/demo/html/index.html).
 
 Integration:
 
