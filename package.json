@@ -8,7 +8,7 @@
     "build": "npm run css && npm run js-compile",
     "js-compile": "rollup --environment BUNDLE:false --config build/rollup.config.js --sourcemap",
     "css-copy": "mkdir -p demo/assets && cp -r src/img demo/assets/img && cp -r node_modules/@fortawesome/fontawesome-free/webfonts demo/assets/fonts",
-    "css-compile": "npm run css-copy && node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 src/scss -o demo/assets/css",
+    "css-compile": "npm run css-copy && node-sass --importer=node_modules/node-sass-tilde-importer --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 src/scss -o demo/assets/css",
     "css-prefix": "postcss --replace demo/assets/css/app.css --use autoprefixer --map",
     "css-purge": "purgecss --css demo/assets/css/app.css --content demo/*.html --output demo/assets/css/",
     "css": "npm run css-compile && npm run css-prefix",
@@ -43,6 +43,7 @@
     "bootstrap": "github:twbs/bootstrap#main",
     "bootstrap-cookie-consent": "^0.0.7",
     "macy": "^2.5",
+    "node-sass-tilde-importer": "^1.0.2",
     "piedweb-cms-js-helpers": "^0.0.21",
     "tiny-slider": "^2.9.2"
   },
